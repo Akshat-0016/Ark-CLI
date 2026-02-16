@@ -1,0 +1,13 @@
+target/
+assistant-core/target/
+**/*.rs.bk
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

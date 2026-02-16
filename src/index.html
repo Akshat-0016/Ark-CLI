@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis Widget</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "@tauri-apps/api/core": "tauri://localhost/node_modules/@tauri-apps/api/core.js"
+    }
+  }
+  </script>
+
+  <script type="module" src="./main.js" defer></script>
+</head>
+
+<body>
+  <div id="box">
+    <input id="prompt" placeholder="Ask Jarvis…" autofocus />
+    <button id="send">Send</button>
+    <pre id="response"></pre>
+  </div>
+</body>
+</html>

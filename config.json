@@ -1,0 +1,15 @@
+{
+  "model": "llama3.2:3b",
+  "info_dump_path": "/home/archsage/ark/info-dump",
+  "temperature": 0.7,
+  "max_tokens": 300,
+  "top_p": 0.9,
+
+  "rag_enabled": true,
+  "rag_sources": ["info-dump"],
+
+  "cache_enabled": true,
+  "cache_size": 100,
+
+  "system_prompt": "You are Ark, a fast offline assistant."
+}
