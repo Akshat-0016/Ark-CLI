@@ -1,7 +1,50 @@
-# Tauri + Vanilla
+# Ark-CLI
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+Ark is a fast, offline AI assistant built with Rust and Tauri.
 
-## Recommended IDE Setup
+It runs a local LLM with RAG (Retrieval-Augmented Generation), memory, file indexing, and PDF ingestion — all without cloud dependency.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+---
+
+## Features
+
+-  Local LLM inference (llama3.2:3b)
+-  File indexing + document retrieval
+-  PDF parsing support
+-  RAG pipeline
+-  Memory caching layer
+-  Offline-first architecture
+-  Desktop UI built with Tauri
+
+---
+
+## Architecture
+
+Frontend (Vite + JS)
+->
+Tauri bridge
+->
+Rust backend (assistant-core)
+->
+LLM + RAG + Cache + File Router
+
+---
+
+##  Tech Stack
+
+- Rust
+- Tauri
+- Vite
+- pnpm
+- Local LLM (llama3)
+
+---
+
+##  Run Locally
+
+### Backend
+
+```bash
+cd assistant-core
+cargo build
+cargo run
