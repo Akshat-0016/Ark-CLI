@@ -1,8 +1,8 @@
-use serde::Deserialize;
 use dirs::config_dir;
+use serde::Deserialize;
 use std::fs;
-use std::path::PathBuf;
 use std::io::Write;
+use std::path::PathBuf;
 
 #[derive(Deserialize, Clone)]
 pub struct Config {
@@ -11,8 +11,7 @@ pub struct Config {
 }
 
 fn get_config_path() -> PathBuf {
-    let base = config_dir().expect("Could not get config directory");
-    base.join("ark/config.json")
+    PathBuf::from("config.json")
 }
 
 fn ensure_config_exists(path: &PathBuf) {
@@ -22,7 +21,7 @@ fn ensure_config_exists(path: &PathBuf) {
         fs::create_dir_all(dir).expect("Failed creating config directory");
     }
 
-   if !path.exists() {
+    if !path.exists() {
         let default_cfg = r#"
         {
             "model": "llama3.2:3b",
