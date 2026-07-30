@@ -1,0 +1,12 @@
+.git
+.gitignore
+
+#**/target
+**/node_modules
+
+.vscode
+.idea
+
+*.log
+
+README.md

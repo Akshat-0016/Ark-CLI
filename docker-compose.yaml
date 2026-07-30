@@ -1,0 +1,13 @@
+services:
+  ark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: ark-cli
+
+    stdin_open: true
+    tty: true
+
+    volumes:
+      - ./info-dump:/app/info-dump
