@@ -9,7 +9,7 @@ use crate::{
     },
 };
 use std::fs;
-use std::path::Path;
+//use std::path::Path;
 
 /// Builds every indexing artifact required by the search engine.
 ///

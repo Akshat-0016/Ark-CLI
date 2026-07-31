@@ -1,6 +1,6 @@
 use crate::ai::rag::Rag;
 use crate::cache::{get_cached, set_cached};
-use crate::config::load_config;
+//use crate::config::load_config;
 use crate::index::{document::Document, inverted_index::InvertedIndex};
 use crate::memory::Memory;
 use crate::search::engine::SearchEngine;
